@@ -1,0 +1,702 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+}
+
+html {
+    height: 101%;
+}
+
+/* always display scrollbars */
+body {
+    font-size: 62.5%;
+    line-height: 1;
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    background: url(../images/bg.png) repeat;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+input {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+.cinema {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    /*z-index: 1;*/
+    /*position: fixed;*/
+
+}
+
+.row_1 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.row_2 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.row_3 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.row_4 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.row_5 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.row_6 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.row_7 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.place_row_1 {
+
+    width: 40px;
+    /*height: 40px;*/
+    background: gray;
+    float: left;
+    margin: 10px;
+
+}
+
+/*
+.place_row_1:hover{
+    
+    width: 30px;
+    height: 530x;
+    background: gold;
+    float: left;
+    margin: 10px;
+    
+}
+*/
+
+.place_row_2 {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    float: left;
+    margin: 10px;
+}
+
+/*
+.place_row_2:hover{
+    
+    width: 30px;
+    height: 30px;
+    background: gold;
+    float: left;
+    margin: 10px;
+    
+}
+*/
+
+.place_row_3 {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    float: left;
+    margin: 10px;
+}
+
+/*
+.place_row_3:hover{
+    
+    width: 30px;
+    height: 30px;
+    background: gold;
+    float: left;
+    margin: 10px;
+    
+}
+*/
+
+.place_row_4 {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    float: left;
+    margin: 10px;
+}
+
+/*
+.place_row_4:hover{
+    
+    width: 30px;
+    height: 30px;
+    background: gold;
+    float: left;
+    margin: 10px;
+    
+}
+*/
+
+.place_row_5 {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    float: left;
+    margin: 10px;
+}
+
+/*
+.place_row_5:hover{
+    
+    width: 30px;
+    height: 30px;
+    background: gold;
+    float: left;
+    margin: 10px;
+    
+}
+*/
+
+.place_row_6 {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    float: left;
+    margin: 10px;
+}
+
+/*
+.place_row_6:hover{
+    
+    width: 30px;
+    height: 30px;
+    background: gold;
+    float: left;
+    margin: 10px;
+    
+}
+*/
+
+.place_row_7 {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    float: left;
+    margin: 10px;
+}
+
+/*
+.place_row_7:hover{
+    
+    width: 30px;
+    height: 30px;
+    background: gold;
+    float: left;
+    margin: 10px;
+    
+}
+*/
+
+.screen {
+    margin: 0 auto;
+    width: 570px;
+    height: 50px;
+    border: solid 2px #000;
+    border-color: gray transparent transparent transparent;
+    border-radius: 50%/50px 50px 0 0;
+
+}
+
+.screen_name {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: gray;
+
+}
+
+.info {
+    height: 45px;
+    width: 100%;
+    background: darkorange;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.menu li {
+    float: left;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu {
+    float: left;
+    padding-left: 15px;
+
+}
+
+.user_menu {
+    float: right;
+    padding-right: 15px;
+}
+
+.user_menu li {
+    float: left;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.user_menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+.poster a{
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+*/
+
+/*
+.log_in a{
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+*/
+
+/*
+.help a{
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+*/
+
+.modal_text h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.modal_text_active {
+    color: #ff8c00;
+    font-size: 25px;
+}
+
+.modal_text_login {
+    float: right;
+    padding: 10px 10px 0px 10px;
+}
+
+.ticket_user {
+    background: darkorange;
+    border: none;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.images_poster img {
+    width: 80px;
+    height: 125px;
+    padding: 5px;
+}
+
+.images_poster {
+    width: 200px;
+    margin-left: 20px;
+    float: right;
+
+}
+
+.chair {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 2em 0;
+    height: 5px;
+
+}
+
+.forma_cinema_user {
+    margin-top: 5px;
+    width: 150px;
+    float: right;
+}
+
+.forma_cinema_user_btn {
+    background: darkorange;
+    border: none;
+    padding: 15px;
+    /*width: 80%;*/
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.forma_cinema_user h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.sum {
+    text-align: center;
+}
+
+.user_select_place {
+    width: 97%;
+    margin: 7px;
+}
+
+.price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.btn_promo {
+    background: darkorange;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+}
+
+.countText {
+    text-align: center;
+}
+
+.sale_text {
+    font-size: 15px;
+    text-align: center;
+    /* line-height: 1; */
+    margin-top: 10px;
+}
+
+.sidebar {
+
+}
+
+.data_cinema {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ff8c00;
+
+}
+
+.palace_check li {
+    padding: 5px 0;
+}
+
+.palace_check {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.checkColor {
+
+    background: #16cd57 !important;
+    color: #cd8a23;
+
+}
+
+.checkColor1 {
+
+    background: #2348cd;
+    color: #2348cd;
+}
+
+.placeClosedCube {
+    width: 150px;
+    height: 35px;
+    background: gray;
+    border-radius: 15px;
+}
+
+.placeOpenCube {
+    width: 150px;
+    height: 35px;
+    background: #ff22a9;
+    border-radius: 15px;
+}
+
+.placeClosed {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+
+}
+
+.placeClosed p {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.color_free {
+    background: blue !important;
+}
+
+.input_enter {
+    color: red !important;
+
+}
+
+.menu_user_name {
+    padding: 14px 25px;
+    font-size: 20px;
+    color: #fff;
+    background: red;
+    font-weight: 500;
+    text-align: center;
+}
+
+.modal_active_place {
+    background: #c72187ad;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 20px;
+    height: 190px;
+    color: #fff;
+    text-align: center;
+}
+
+.nameOperator_modal_active_place {
+    background: #ff091499;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 20px;
+    height: 190px;
+    color: #fff;
+    text-align: center;
+}
+
+.nameOperator_modal_active_place_show {
+    display: block;
+}
+
+.nameOperator_modal_active_place_content h1 {
+    font-size: 15px;
+    padding-top: 45px;
+    font-weight: 700;
+}
+
+.nameOperator_button{
+    background: darkorange;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.modal_active_place_show {
+    display: block;
+}
+
+
+.modal_active_place_content h1 {
+    font-size: 15px;
+    padding-top: 45px;
+    font-weight: 700;
+}
+
+.modal_active_place_content_button{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.modal_active_place_content_button_left{
+    background: darkorange;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal_active_place_content_button_right{
+    background: darkorange;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.modalClosePlace{
+    background: #808080cf;
+    display: none;
+    /*display: block;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 20px;
+    height: 190px;
+    color: #fff;
+    text-align: center;
+}
+
+.modalClosePlace_show{
+    display: block;
+}
+
+.modalClosePlaceContent h1{
+    font-size: 15px;
+    padding-top: 45px;
+    font-weight: 700;
+}
+
+.modalClosePlaceContentButton{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.modalClosePlaceContentButtonLeft{
+    background: darkorange;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modalClosePlaceContentButtonRight{
+    background: darkorange;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cinema_time{
+    background: #808080cf;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    border-radius: 20px;
+    height: 95%;
+    color: #fff;
+    display: none;
+    text-align: center;
+}
+
+.cinema_time_content h1{
+    font-size: 25px;
+    padding-top: 200px;
+    font-weight: 700;
+}
+
+.cinema_time_show{
+    display: block;
+}
